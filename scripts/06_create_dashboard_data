@@ -1,0 +1,58 @@
+/*
+===============================================================================
+DDL Script: Create View as dashboard main data source
+===============================================================================
+Script Purpose:
+    This script creates view to create the Dasboard. 
+
+Usage:
+    - These view can be queried directly for analytics and reporting.
+===============================================================================
+*/
+
+-- =============================================================================
+-- Create View: salesDB.all_sales
+-- =============================================================================
+
+-- create a view of a consolidated table of all the data in salesDB IF it doesn't exist.
+-- if it exists, then drop it and recreate it
+DROP VIEW IF EXISTS salesDB.all_sales;
+CREATE OR REPLACE VIEW salesDB.all_sales AS
+SELECT 
+s.order_number,
+s.product_key,
+s.customer_key,
+s.order_date,
+s.shipping_date,
+s.due_date,
+s.sales_amount,
+s.quantity,
+s.price,
+(price * quantity) - (cost * quantity) AS profit,
+p.product_id,
+p.product_number,
+p.product_name,
+p.category,
+p.cost,
+CONCAT(c.first_name,' ', c.last_name) AS customer_name,
+c.country,
+c.gender,
+c.birthdate,
+DATEDIFF(YEAR, c.birthdate,'2014-01-28') AS age,
+CASE 
+  WHEN DATEDIFF(YEAR, c.birthdate,'2014-01-28') >= 18 AND DATEDIFF(YEAR, c.birthdate,'2014-01-28') <= 25 THEN 'Teenagers'
+  WHEN DATEDIFF(YEAR, c.birthdate,'2014-01-28') >= 26 AND DATEDIFF(YEAR, c.birthdate,'2014-01-28') <= 35 THEN 'Young Adults'
+  WHEN DATEDIFF(YEAR, c.birthdate,'2014-01-28') >= 36 AND DATEDIFF(YEAR, c.birthdate,'2014-01-28') <= 50 THEN 'Middle Aged'
+  WHEN DATEDIFF(YEAR, c.birthdate,'2014-01-28') >= 51 AND DATEDIFF(YEAR, c.birthdate,'2014-01-28') <= 70 THEN 'Older Adults'
+  WHEN DATEDIFF(YEAR, c.birthdate,'2014-01-28') >= 71 THEN 'Retirees'
+  ELSE 'N/A'
+END AS Customer_age_group,
+c.create_date
+FROM workspace.salesdb.fact_sales s
+LEFT JOIN workspace.salesdb.dim_products p
+ON s.product_key = p.product_key
+LEFT JOIN workspace.salesdb.dim_customers c
+ON s.customer_key = c.customer_key
+
+
+SELECT * FROM workspace.salesdb.all_sales
