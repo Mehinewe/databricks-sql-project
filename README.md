@@ -29,9 +29,7 @@ Instead of focusing only on SQL queries, I focused on:
 * Making analytics self-service
 
 ### 🔎 Step 1: Data Exploration in Databricks SQL
-
 Before building dashboards, I performed structured exploratory analysis directly in Databricks SQL:
-
 * Validated joins between fact and dimension tables
 * Checked data completeness and consistency
 * Analyzed sales distribution across time and categories
@@ -39,32 +37,18 @@ Before building dashboards, I performed structured exploratory analysis directly
 * Measured revenue concentration across customers
 
 **SQL techniques used:**
-
 * Aggregations
 * Window functions
 * Multi-table joins
 * Date filtering logic
-
 This phase ensured that every metric used in the dashboards was accurate, defensible, and business-aligned.
 
 ## 📊 Dashboard 1: Sales Performance
 ### 🎯 Purpose
-
 Provide executives and sales managers with a clear, high-level view of business performance.
+<img width="1726" height="721" alt="image" src="https://github.com/user-attachments/assets/d44d297f-6213-4a5d-b92d-6ee9bda8ae65" />
 
-**🔑 Key Metrics**
-* Total Sales
-* Total Profit
-* Total Quantity Sold
 
-**📈 Visual Insights**
-* Sales trend over time
-* Revenue by product category
-*  Monthly Sales Trend by Year
-
-**🗓 Filter**
-
-* Interactive date range filters
 
 ### 💡 Business Questions Answered
 
@@ -76,22 +60,8 @@ This dashboard enables fast, executive-level decision-making without requiring S
 
 ## 👥 Dashboard 2: Customer Insights
 ### 🎯 Purpose
-
 Support marketing and strategy teams in understanding customer behavior and segmentation.
-
-**🔑 Key Metrics**
-* Number of consumers
-* Average sales per consumer
-* Total number of orders
-
-**📊 Visual Insights**
-* Orders by customer age group
-* Top 10 high-revenue customers
-* Segmentation by country
-
-**🎛 Filters**
-* Customer age group
-* Customer country
+<img width="1764" height="645" alt="image" src="https://github.com/user-attachments/assets/93b7bb27-1f4d-43c0-8e8d-57c0e54127e7" />
 
 ### 💎 Business Questions Answered
 * Understanding Our Customers
@@ -106,9 +76,7 @@ Support marketing and strategy teams in understanding customer behavior and segm
 This dashboard transforms transactional data into strategic intelligence.
 
 ## 🤝 Business Validation Process
-
 To ensure insights were meaningful and actionable:
-
 * KPIs were aligned with business definitions
 * Naming conventions were refined for clarity
 * Dashboard layout was adjusted for usability
@@ -129,16 +97,6 @@ It helped to:
 * Improve documentation and storytelling
 AI did not replace analytical thinking — it enhanced iteration speed and insight generation.
 
-## 🏗 Repository Structure  
-├── sql/  
-│   ├── exploratory_analysis.sql  
-│   ├── sales_metrics.sql  
-│   └── customer_insights.sql  
-├── dashboards/  
-│   ├── sales_dashboard.md  
-│   └── customer_dashboard.md  
-└── README.md  
-
 ## 📌 Key Takeaways
 * SQL is more powerful when aligned with business context
 * Dashboards should be audience-specific
@@ -154,3 +112,15 @@ This project reflects my approach as a data analyst:
 ✔ Design for decision-making
 ✔ Use AI strategically
 ✔ Deliver clarity, not just charts
+
+## 🛡️ License
+This project is licensed under the [MIT License](https://mit-license.org/). You are free to use, modify, and share this project with proper attribution.
+
+## 🗒️ Data Source & Attribution
+**Data Source**: The data comes from Baraa Khatib Salkini .  
+**Note**: All analysis, data modeling, and visualizations are my own work.
+
+## 🌟 About Me
+Hi there, I’m Mehinewe Kedewouli 👋  
+I’m a data analyst who answer your business questions with data and tell you what to do next based on the results.
+
