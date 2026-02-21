@@ -107,20 +107,26 @@ AI did not replace analytical thinking — it enhanced iteration speed and insig
 ## 👩🏽‍💻 About This Project
 This project reflects my approach as a data analyst:
 
-✔ Think business-first
-✔ Validate before visualizing
-✔ Design for decision-making
-✔ Use AI strategically
-✔ Deliver clarity, not just charts
+✔ Think business-first  
+✔ Validate before visualizing  
+✔ Design for decision-making  
+✔ Use AI strategically  
+✔ Deliver clarity, not just charts  
 
 ## 🛡️ License
-This project is licensed under the [MIT License](https://mit-license.org/). You are free to use, modify, and share this project with proper attribution.
+
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and share it with proper attribution.
 
 ## 🗒️ Data Source & Attribution
-**Data Source**: The data comes from Baraa Khatib Salkini .  
+**Data Source**: Huge thank you to [Baraa Khatib Salkini](https://www.linkedin.com/in/baraa-khatib-salkini/) for breaking down complex concepts and making data learning practical and accessible.  
 **Note**: All analysis, data modeling, and visualizations are my own work.
 
 ## 🌟 About Me
 Hi there, I’m Mehinewe Kedewouli 👋  
-I’m a data analyst who answer your business questions with data and tell you what to do next based on the results.
+I’m a Data Analyst, and I help organizations leverage their data to accelerate performance and growth.
+
+Let's stay in touch! Feel free to connect with me on the following platforms:
+
+[Youtube](https://www.youtube.com/@LeverageDataa)  
+[Linkedin](https://www.linkedin.com/in/mehinewe-kedewouli/)
 
