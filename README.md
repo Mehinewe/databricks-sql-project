@@ -127,6 +127,6 @@ I’m a Data Analyst, and I help organizations leverage their data to accelerate
 
 Let's stay in touch! Feel free to connect with me on the following platforms:
 
-[Youtube](https://www.youtube.com/@LeverageDataa)  
-[Linkedin](https://www.linkedin.com/in/mehinewe-kedewouli/)
+[![Youtube](https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@LeverageDataa)
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mehinewe-kedewouli/)
 
